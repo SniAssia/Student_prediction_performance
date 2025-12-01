@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.studentperformance.controllers.MainController"
+            prefWidth="900" prefHeight="550">
+
+    <top>
+        <HBox alignment="CENTER_RIGHT" spacing="20"
+              style="-fx-padding: 15; -fx-background-color: #f4f4f4;">
+            <Button text="Add Student"
+                    fx:id="addStudentButton"
+                    onAction="#onAddStudentClicked"
+                    style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="TOP_CENTER" style="-fx-padding: 20;">
+
+            <Label text="Students Performance Dashboard"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+            <TableView fx:id="studentsTable" prefWidth="800" prefHeight="400">
+                <columns>
+                    <TableColumn text="Name" prefWidth="150" fx:id="colName"/>
+                    <TableColumn text="Modules" prefWidth="120" fx:id="colModules"/>
+                    <TableColumn text="Attendance" prefWidth="120" fx:id="colAttendance"/>
+                    <TableColumn text="Activity" prefWidth="120" fx:id="colActivity"/>
+                    <TableColumn text="Category" prefWidth="120" fx:id="colCategory"/>
+                    <TableColumn text="Actions" prefWidth="100" fx:id="colActions"/>
+                </columns>
+            </TableView>
+
+        </VBox>
+    </center>
+
+</BorderPane>

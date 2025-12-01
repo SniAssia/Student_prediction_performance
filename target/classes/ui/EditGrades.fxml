@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<ScrollPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.studentperformance.controllers.EditGradesController"
+            fitToWidth="true"
+            hbarPolicy="NEVER"
+            vbarPolicy="AS_NEEDED">
+
+    <VBox spacing="20"
+          alignment="TOP_CENTER"
+          style="-fx-padding: 20;">
+
+        <Label fx:id="titleLabel"
+               text="Edit Grades"
+               style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <VBox fx:id="modulesContainer"
+              spacing="15"
+              prefWidth="300" />
+
+        <Button text="Save Grades"
+                onAction="#onSaveGrades"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white;"
+                prefWidth="150" />
+
+    </VBox>
+
+</ScrollPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Pos?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.studentperformance.controllers.EditStudentDashboardController"
+      alignment="CENTER" spacing="20" style="-fx-padding: 20;">
+
+    <Label fx:id="titleLabel" text="Edit Student" style="-fx-font-size: 20;"/>
+
+    <Button text="Edit Grades" onAction="#onEditGrades" prefWidth="200"/>
+    <Button text="Edit Attendance" onAction="#onEditAttendance" prefWidth="200"/>
+    <Button text="Edit Activities" onAction="#onEditActivities" prefWidth="200"/>
+
+</VBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<ScrollPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.studentperformance.controllers.MainDashboardController"
+            fitToWidth="true">
+
+    <VBox fx:id="container" spacing="25" style="-fx-padding: 20;">
+
+        <HBox alignment="CENTER_RIGHT">
+            <Button fx:id="addStudentButton"
+                    text="Add Student"
+                    onAction="#onAddStudentClicked"
+                    style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10 20;" />
+        </HBox>
+
+    </VBox>
+
+</ScrollPane>

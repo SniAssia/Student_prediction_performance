@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Button?>
+
+<ScrollPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.studentperformance.controllers.EditAttendanceController"
+            fitToWidth="true"
+            hbarPolicy="NEVER"
+            vbarPolicy="AS_NEEDED">
+
+    <VBox spacing="20"
+          alignment="CENTER"
+          style="-fx-padding: 20;">
+
+        <Label fx:id="titleLabel"
+               text="Edit Attendance"
+               style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <VBox fx:id="modulesContainer"
+              spacing="15" />
+
+        <Button text="Save Attendance"
+                onAction="#onSaveAttendance"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white;" />
+
+    </VBox>
+
+</ScrollPane>
