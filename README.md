@@ -117,4 +117,8 @@ mvn javafx:run
 - Update the MySQL username/password before running the program.  
 - You may adjust the value of **K** in the KNN algorithm inside the prediction logic if performance needs tuning.
 
+## Collaborators 
+- Farah Bouhzam
+- Assia Snissi
+
 
