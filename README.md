@@ -1,4 +1,4 @@
-# 🎓 Student Performance Prediction (K-NN Algorithm)
+#  Student Performance Prediction (K-NN Algorithm)
 
 This project is a **JavaFX application** that predicts the academic performance of students using the **K-Nearest Neighbors (KNN)** machine-learning algorithm.  
 The system uses student historical data (grades, attendance, activities, etc.) to estimate how a new student is likely to perform based on **students with similar academic profiles**.
